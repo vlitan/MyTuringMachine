@@ -1,0 +1,22 @@
+{
+    "start":{
+        "0" : {"write":"1", "move":"r", "next":"2"},
+        "1" : {"write":"0", "move":"r", "next":"2"}
+    },
+    "2":{
+        "0" : {"write":"1", "move":"r", "next":"3"},
+        "1" : {"write":"0", "move":"r", "next":"3"}
+    },
+    "3":{
+        "0" : {"write":"0", "move":"r", "next":"4"},
+        "1" : {"write":"0", "move":"l", "next":"2"}
+    },
+    "4":{
+        "0" : {"write":"0", "move":"n", "next":"halt"},
+        "1" : {"write":"1", "move":"l", "next":"halt"}
+    },
+    "halt":{
+        "0" : {"write":"1", "move":"r", "next":"halt"},
+        "1" : {"write":"1", "move":"l", "next":"halt"}
+    }
+}
