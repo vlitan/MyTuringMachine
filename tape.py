@@ -16,7 +16,7 @@ class Tape(object):
 
     # TODO: create more flexible input methods
     def directionDecoder(self, direction):
-        return {"r": 1, "l": -1, "n": 0}.get(direction)
+        return {"r": 1, "l": -1, "n": 0}.get(direction, 0)
 
     def adjustSize(self):
         if (self.position < 0):
