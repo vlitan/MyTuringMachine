@@ -3,7 +3,7 @@ import json
 import pprint
 import optparse
 from tape import Tape
-from time import sleep
+
 def parse_args():
     usage = """ Usage: turing.py cardsFilePath [options]
     options:
